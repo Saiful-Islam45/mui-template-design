@@ -9,7 +9,7 @@ export const HomePage =() => {
     return (
         <React.Fragment>
             <Navbar/>
-            <Stack direction='row' alignItems='center' justifyContent='space-between' spacing={2}>
+            <Stack direction='row'  justifyContent='space-between' spacing={2}>
                 <MenuBar/>
                 <NewsFeed/>
                 <RightSide/>
