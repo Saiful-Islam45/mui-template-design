@@ -147,7 +147,7 @@ const RightSide = () => {
               <Avatar alt="Cindy Baker" src={card1} />
             </ListItemAvatar>
             <ListItemText
-              primary="Oui Oui"
+              primary="Oui Oui2"
               secondary={
                 <React.Fragment>
                   <Typography
@@ -156,9 +156,9 @@ const RightSide = () => {
                     variant="body2"
                     color="text.primary"
                   >
-                    Sandra Adams
+                    Sandra Andre
                   </Typography>
-                  {" — Do you have Paris recommendations? Have you ever…"}
+                  {" — Do you have Paris recommendations? Have you ever been there"}
                 </React.Fragment>
               }
             />
