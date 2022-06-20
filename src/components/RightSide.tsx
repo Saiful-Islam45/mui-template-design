@@ -136,7 +136,7 @@ const RightSide = () => {
                   >
                     to Scott, Alex, Jennifer
                   </Typography>
-                  {" — Wish I could come, but I'm out of town this…"}
+                  {" — Wish I could come, but I'm out of town this after that time…"}
                 </React.Fragment>
               }
             />
