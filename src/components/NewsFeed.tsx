@@ -57,7 +57,7 @@ export const NewsFeed = () => {
             />
             <CardMedia
             component="img"
-            height="500"
+            height="20%"
             image={post.image}
             alt="Paella dish"
             />
