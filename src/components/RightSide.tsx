@@ -19,7 +19,7 @@ const card3 = require("./../img/profile.jpg");
 const RightSide = () => {
   return (
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-      <Box position="fixed">
+      <Box position="inherit">
         <Typography variant={"h6"} fontWeight={400} color="gray">
           Active Friends
         </Typography>
