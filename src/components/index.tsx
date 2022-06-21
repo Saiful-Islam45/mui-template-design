@@ -4,6 +4,7 @@ import MenuBar from './MenuBar';
 import Navbar from './Navbar'
 import NewsFeed from './NewsFeed';
 import RightSide from './RightSide';
+import Add from './Add';
 
 export const HomePage =() => {
     return (
@@ -14,6 +15,7 @@ export const HomePage =() => {
                 <NewsFeed/>
                 <RightSide/>
             </Stack>
+            <Add/>
         </React.Fragment>
     )
 }
