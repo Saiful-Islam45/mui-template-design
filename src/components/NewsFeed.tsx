@@ -12,6 +12,8 @@ import {
   Typography,
 } from "@mui/material";
 const cardImg= require('./../img/profile.jpg');
+const card1 = require("./../img/card1.jpg");
+const card2 = require("./../img/card2.jpg");
 const dataset = [{
     avatarIcon: 'S',
     title: 'Saiful Islam',
@@ -23,14 +25,14 @@ const dataset = [{
     avatarIcon: 'R',
     title: 'Rajib Khanna',
     subheader:"January 21, 2016",
-    image: cardImg,
+    image: card2,
     cardContent:' This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
 },
 {
     avatarIcon: 'M',
     title: 'Mahi Islam',
     subheader:"September 14, 2016",
-    image: cardImg,
+    image: card1,
     cardContent:' This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.'
 }
 ]
