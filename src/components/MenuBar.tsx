@@ -17,10 +17,9 @@ import {
   ListItemText,
   Switch,
 } from "@mui/material";
-import React, { useState } from "react";
+import { ITheme } from ".";
 
-export const MenuBar = () => {
-  const[darkTheme, setDarktheme] = useState(false)
+export const MenuBar = ({mode, setMode}: ITheme) => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" }, top: 0 }}>
       <Box position="fixed">
@@ -86,8 +85,8 @@ export const MenuBar = () => {
               <ListItemIcon
                 sx={{ display: "flex", gap: 2, alignItems: "center " }}
               >
-                <ModeNight color={darkTheme ? 'inherit' : 'warning'} />
-                <Switch onClick={() => setDarktheme(!darkTheme)}/>
+                <ModeNight color={mode ? 'inherit' : 'warning'} />
+                <Switch onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}/>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>

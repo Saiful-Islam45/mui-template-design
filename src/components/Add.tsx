@@ -39,8 +39,9 @@ export default function Add() {
           height={280}
           width={400}
           p={2}
-          borderRadius={30}
-          bgcolor='white'
+          borderRadius={5}
+          bgcolor={"background.default"}
+          color={"text.primary"}
         >
           <Typography variant='h6' color='gray' textAlign='center' mb={2}>Create post</Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: 2 }}>
@@ -68,7 +69,7 @@ export default function Add() {
           </Stack>
           <ButtonGroup fullWidth variant="contained" aria-label="outlined primary button group">
             <Button>Post</Button>
-            <Button sx={{width: '100px'}}><DateRange/></Button>
+            <Button sx={{ width: '100px' }}><DateRange /></Button>
           </ButtonGroup>
         </Box>
       </Modal>

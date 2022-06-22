@@ -3,9 +3,9 @@ import './App.css';
 import { HomePage } from './components';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
-
+export type PaletteMode = 'light' | 'dark';
 function App() {
-  const [mode, setMode] = useState('light')
+  const [mode, setMode] = useState<PaletteMode>('dark')
   const darkTheme = createTheme({
     palette: {
       mode: mode
@@ -13,7 +13,7 @@ function App() {
   })
   return (
     <ThemeProvider theme={darkTheme}>
-      <HomePage/>
+      <HomePage mode={mode} setMode={setMode}/>
     </ThemeProvider>
   );
 }
