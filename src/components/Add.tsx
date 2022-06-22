@@ -4,6 +4,8 @@ import Tooltip from '@mui/material/Tooltip';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import Modal from '@mui/material/Modal';
+import { Avatar, TextField, Typography } from '@mui/material';
+const card2 = require("./../img/card2.jpg");
 
 export default function Add() {
   const [open, setOpen] = React.useState(false);
@@ -26,12 +28,31 @@ export default function Add() {
       </Tooltip>
       <Modal
         open={open}
+        sx={{display:'flex', alignItems:'center', justifyContent:'center'}}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box>
-          jdhfjh
+        <Box
+        height={300}
+        width={400}
+        p={2}
+        borderRadius={30}
+        bgcolor='white'
+        >
+         <Typography variant='h6' color='gray' textAlign='center'>Create post</Typography>
+         <Box sx={{display: 'flex', alignItems: 'center', gap: '5px', marginBottom: 2}}>
+         <TextField
+          id="outlined-multiline-static"
+          rows={4}
+          placeholder="Whats"
+        />
+            <Avatar
+            src={card2}
+              sx={{width:30, height: 30}}
+            />
+            <Typography variant='body2' fontWeight={500}>Saiful Islam</Typography>
+         </Box>
         </Box>
       </Modal>
     </>
